@@ -17,6 +17,6 @@ A Python script that allows you to remove specified columns from CSV files.
 **NOTE:** CSV files are edited inplace!
 
 
-**TODO:**
+## TODO
 
 Handle CSV files with no headers
