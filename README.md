@@ -21,7 +21,7 @@ Default values with no args: *{'r': False, 'e': False, 'l': False, 'w': '*\**.cs
 
 ## Using Script without Arguments
 
-If you are uncomfortable with the command line, set use_default_args to True and change the values for the flags in my_args and run script without arguments.
+If you are uncomfortable with the command line, set *use_default_args* to True and change the values for the flags in *my_args* and run script without arguments.
 
 ## TODO
 
