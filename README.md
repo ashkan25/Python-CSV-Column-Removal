@@ -15,3 +15,8 @@ A Python script that allows you to remove specified columns from CSV files.
 **-l** : Drop last column if empty and has no column name.
 
 **NOTE:** CSV files are edited inplace!
+
+
+**TODO:**
+
+Handle CSV files with no headers
