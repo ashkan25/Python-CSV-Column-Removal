@@ -4,7 +4,7 @@ A Python script that allows you to remove specified columns from CSV files.  :oc
 
 ## Optional Arguments
 
-* **-f** : File name of file with columns to remove (file must have one word per line). Look at sample_file.txt as example.
+* **-f** : File name of file with columns to remove (file must have one word per line). Look at [sample_file.txt](https://github.com/ashkan25/Python-CSV-Column-Remover/blob/master/sample_file.txt) as example.
 
 * **-r** : Recursively search for files starting from current directory. By default it will search currently directory only.
 
