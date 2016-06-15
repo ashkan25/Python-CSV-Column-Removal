@@ -40,7 +40,7 @@ def get_file_paths(wildcard, is_recursive):
     # Find all files matching pattern recursively starting from current directory
     path_list = []
     for root, dirnames, filenames in os.walk('.'):
-        for filename in fnmatch.filter(filenames, args['w']):
+        for filename in fnmatch.filter(filenames, wildcard):
             path = os.path.join(root, filename)
             path_list.append(path)
 
