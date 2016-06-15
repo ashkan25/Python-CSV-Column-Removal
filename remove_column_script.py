@@ -65,9 +65,10 @@ def drop_columns(file_name, drop_empty_cols, drop_last_col, csv_file_path):
 def drop_specified_columns(file_name, df):
     fp = open(file_name, 'r')
     columns = fp.readlines()
+    columns = map(lambda col: col.strip(), columns)
     fp.close()
 
-    return df.drop(columns, axis=1)
+    return df.drop(columns, axis=1, errors='ignore')
 
 
 def drop_empty_columns(df):
