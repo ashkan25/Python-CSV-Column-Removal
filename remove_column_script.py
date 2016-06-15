@@ -25,7 +25,7 @@ def create_parser():
 def parse_args(args):
     # Parse args '-r' and '-w'
     file_paths = get_file_paths(args['w'], args['r'])
-
+	
     # Parse args '-f', '-e', '-l' for each file
     if args['f'] or args['e'] or args['l']:
         for file_path in file_paths:
@@ -48,17 +48,18 @@ def get_file_paths(wildcard, is_recursive):
 
 
 def drop_columns(file_name, drop_empty_cols, drop_last_col, csv_file_path):
+    print csv_file_path
     df = pd.read_csv(csv_file_path)
 
     if file_name:
         df = drop_specified_columns(file_name, df)
 
     if drop_empty_cols:
-        df = drop_empty_cols
+        df = drop_empty_columns(df)
     elif drop_last_col:
-        df = drop_last_col
+        df = drop_last_column(df)
 
-    df.to_csv(csv_file_path)
+    df.to_csv(csv_file_path, index=False)
 
 
 def drop_specified_columns(file_name, df):
