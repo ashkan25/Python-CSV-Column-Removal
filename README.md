@@ -26,3 +26,4 @@ If you are uncomfortable with the command line, set *use_default_args* to True a
 ## TODO
 
 * Handle CSV files with no headers
+* Optional Argument to print visited files
